@@ -1,6 +1,6 @@
 {
   "name": "@dgdc87/dialog",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "author": "Diego González del Campo",
   "license": "ISC",
   "peerDependencies": {

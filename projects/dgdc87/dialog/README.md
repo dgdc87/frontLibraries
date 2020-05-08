@@ -4,11 +4,11 @@ I use this component to show an angular material dialog to the user. The dialog 
 
 - Simple: it has only one button to close the modal.
 
-![Image of simpleDialog](https://github.com/dgdc87/frontLibraries/tree/master/projects/dgdc/dialog/assets/images/simpleDialog.png)
+![Image of simpleDialog](https://raw.githubusercontent.com/dgdc87/frontLibraries/master/projects/dgdc87/dialog/assets/images/simpleDialog.png)
 
 - Confirmation: it has two button, one to close and the other one return true if the user accecpt.
 
-![Image of confirmationDialog](https://github.com/dgdc87/frontLibraries/tree/master/projects/dgdc/dialog/assets/images/confirmationDialog.png)
+![Image of confirmationDialog](https://raw.githubusercontent.com/dgdc87/frontLibraries/master/projects/dgdc87/dialog/assets/images/confirmationDialog.png)
 
 
 The messages that are shown ara tranlated using ngx-translate.
