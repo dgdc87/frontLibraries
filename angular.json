@@ -2,5 +2,41 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
-  "projects": {}
+  "projects": {
+    "@dgdc/dialog": {
+      "projectType": "library",
+      "root": "projects/dgdc/dialog",
+      "sourceRoot": "projects/dgdc/dialog/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/dgdc/dialog/tsconfig.lib.json",
+            "project": "projects/dgdc/dialog/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/dgdc/dialog/src/test.ts",
+            "tsConfig": "projects/dgdc/dialog/tsconfig.spec.json",
+            "karmaConfig": "projects/dgdc/dialog/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/dgdc/dialog/tsconfig.lib.json",
+              "projects/dgdc/dialog/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }},
+  "defaultProject": "@dgdc/dialog"
 }
