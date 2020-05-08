@@ -19,16 +19,17 @@
       "dom"
     ],
     "paths": {
-      "@dgdc/dialog": [
-        "dist/dgdc/dialog"
+      "@dgdc87/dialog": [
+        "dist/dgdc87/dialog"
       ],
-      "@dgdc/dialog/*": [
-        "dist/dgdc/dialog/*"
+      "@dgdc87/dialog/*": [
+        "dist/dgdc87/dialog/*"
       ]
     }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true
+    "strictInjectionParameters": true,
+    "enableIvy": false
   }
 }

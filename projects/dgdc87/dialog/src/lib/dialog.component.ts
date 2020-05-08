@@ -1,5 +1,6 @@
 import { Component, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'lib-dialog',
@@ -12,6 +13,7 @@ export class DialogComponent {
 
   constructor(
     public dialogRef: MatDialogRef<DialogComponent>,
+    private translate: TranslateService,
     @Inject(MAT_DIALOG_DATA) public data: any
   ) {
     if (Array.isArray(data.message)) {
