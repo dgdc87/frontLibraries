@@ -1,6 +1,6 @@
 {
   "name": "@dgdc87/dialog",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "author": "Diego González del Campo",
   "license": "ISC",
   "peerDependencies": {
@@ -9,7 +9,7 @@
     "@angular/material": "^9.2.2"
   },
   "dependencies": {},
-  "description": "Dialog pop-up for angular 9 projects",
+  "description": "Generic dialog pop-up service for Angular 9 using Angular material.",
   "main": "karma.conf.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,10 +19,10 @@
     "url": "https://github.com/dgdc87/frontLibraries/tree/master/projects/dgdc87/dialog"
   },
   "keywords": [
-    "Generic",
+    "Angular material",
     "dialog",
-    "component",
-    "angular9",
-    "material"
+    "Angular 9",
+    "Generic dialog",
+    "Confirmation dialog"
   ]
 }
