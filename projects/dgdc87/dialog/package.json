@@ -1,6 +1,6 @@
 {
   "name": "@dgdc87/dialog",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "author": "Diego González del Campo",
   "license": "ISC",
   "peerDependencies": {
@@ -9,7 +9,7 @@
     "@angular/material": "^9.2.2"
   },
   "dependencies": {},
-  "description": "Generic dialog pop-up service for Angular 9 using Angular material.",
+  "description": "Generic dialog pop-up service for Angular 9 using Angular material and ngx-translate to translate messages.",
   "main": "karma.conf.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,6 +23,11 @@
     "dialog",
     "Angular 9",
     "Generic dialog",
-    "Confirmation dialog"
+    "Confirmation dialog",
+    "Simple dialog",
+    "Generic pop-up",
+    "Confirmation pop-up",
+    "Simple pop-up",
+    "ngx-translate"
   ]
 }
