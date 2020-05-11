@@ -31,6 +31,7 @@ export function LoaderFactory() {
       }
     }),
   ],
+  entryComponents: [DialogComponent],
   exports: [
     DialogComponent,
     TranslateModule

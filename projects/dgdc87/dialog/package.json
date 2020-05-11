@@ -1,6 +1,6 @@
 {
   "name": "@dgdc87/dialog",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "author": "Diego González del Campo",
   "license": "MIT",
   "peerDependencies": {
@@ -20,6 +20,7 @@
     "type": "git",
     "url": "https://github.com/dgdc87/frontLibraries/tree/master/projects/dgdc87/dialog"
   },
+  "homepage": "https://stackblitz.com/edit/demo-dgdc87-dialog",
   "keywords": [
     "Angular material",
     "dialog",

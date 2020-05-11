@@ -13,6 +13,13 @@ I use this component to show an angular material dialog to the user. The dialog 
 
 The messages that are shown are tranlated using ngx-translate.
 
+## Demo
+------
+
+View demo: [Stackblitz](https://stackblitz.com/edit/demo-dgdc87-dialog)
+
+
+
 ## Installation
 ------
 
@@ -26,11 +33,42 @@ The messages that are shown are tranlated using ngx-translate.
   This service is designed to use inside a project which uses:
 
   ```
-      "@ngx-translate/core": "^12.1.2",
-      "@ngx-translate/http-loader": "^4.0.0",
+    "@angular/material": "9.2.3",
+    "@ngx-translate/core": "^12.1.2",
+    "@ngx-translate/http-loader": "^4.0.0",
   ```
 
-  Inside json's files in the i18n folder of your project, you must have the translation to these literals:
+  You have to import the MatDialogModule, the MatButtonModule and the BrowserAnimationsModule inside your AppModule:
+
+  ```
+  import { MatButtonModule } from '@angular/material/button';
+  import { MatDialogModule } from '@angular/material/dialog';
+  import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+  import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+  import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+  @NgModule({
+  imports:      [ 
+      ....
+      HttpClientModule,
+      MatDialogModule,
+      MatButtonModule,,
+      BrowserAnimationsModule,
+      TranslateModule.forRoot({
+        loader: {
+          provide: TranslateLoader,
+          useFactory: (createTranslateLoader),
+          deps: []
+        }
+      })
+    ],
+    declarations: [ AppComponent, HelloComponent ],
+    bootstrap:    [ AppComponent ]
+  })
+  export class AppModule { }
+  ```
+
+  For the translations you need to set inside the json's files in the i18n folder of your project, the translation to these literals:
 
   ```
   "common.no"
@@ -38,7 +76,7 @@ The messages that are shown are tranlated using ngx-translate.
   "common.close"
   ```
 
-  en.json:
+  File en.json:
   ```
   {
     "common":{
