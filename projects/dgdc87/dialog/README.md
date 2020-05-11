@@ -19,7 +19,6 @@ The messages that are shown are tranlated using ngx-translate.
 View demo: [Stackblitz](https://stackblitz.com/edit/demo-dgdc87-dialog)
 
 
-
 ## Installation
 ------
 
@@ -62,10 +61,7 @@ View demo: [Stackblitz](https://stackblitz.com/edit/demo-dgdc87-dialog)
         }
       })
     ],
-    declarations: [ AppComponent, HelloComponent ],
-    bootstrap:    [ AppComponent ]
-  })
-  export class AppModule { }
+    ....
   ```
 
   For the translations you need to set inside the json's files in the i18n folder of your project, the translation to these literals:
