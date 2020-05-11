@@ -54,21 +54,21 @@ The messages that are shown are tranlated using ngx-translate.
 
 * openSimpleDialog:
 
-      | Parameter     | Type      | Expects               | Examples               |
-      | ------------- | --------- | --------------------- | ---------------------- |
-      | width         | string    | Dialog's width        | '65%', '300px', 'auto' |  
-      | messages      | string[ ] | Messages to translate | ['common.alert']       |  
+  | Parameter     | Type      | Expects               | Examples               |
+  | ------------- | --------- | --------------------- | ---------------------- |
+  | width         | string    | Dialog's width        | '65%', '300px', 'auto' |  
+  | messages      | string[ ] | Messages to translate | ['common.alert']       |  
 
 
 
 * openConfirmationDialog:
 
-      | Parameter     | Type      | Expects               | Examples               |
-      | ------------- | --------- | --------------------- | ---------------------- |
-      | width         | string    | Dialog's width        | '65%', '300px', 'auto' |  
-      | messages      | string[ ] | Messages to translate | ['common.alert']       |  
+  | Parameter     | Type      | Expects               | Examples               |
+  | ------------- | --------- | --------------------- | ---------------------- |
+  | width         | string    | Dialog's width        | '65%', '300px', 'auto' |  
+  | messages      | string[ ] | Messages to translate | ['common.alert']       |  
 
-      Return: Promise < boolean > 
+  Return: Promise < boolean > 
 
 
 ## Example / how to use:

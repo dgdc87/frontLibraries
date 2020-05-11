@@ -1,8 +1,8 @@
 {
   "name": "front-libraries",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Diego González del Campo",
-  "license": "ISC",
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
