@@ -39,7 +39,7 @@ View demo: [Stackblitz](https://stackblitz.com/edit/demo-dgdc87-dialog)
 
   You have to import the MatDialogModule, the MatButtonModule and the BrowserAnimationsModule inside your AppModule:
 
-  ```
+  ```typescript
   import { MatButtonModule } from '@angular/material/button';
   import { MatDialogModule } from '@angular/material/dialog';
   import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
@@ -66,14 +66,14 @@ View demo: [Stackblitz](https://stackblitz.com/edit/demo-dgdc87-dialog)
 
   For the translations you need to set inside the json's files in the i18n folder of your project, the translation to these literals:
 
-  ```
+  ```json
   "common.no"
   "common.yes"
   "common.close"
   ```
 
   File en.json:
-  ```
+  ```json
   {
     "common":{
       "no": "No",
@@ -110,7 +110,7 @@ View demo: [Stackblitz](https://stackblitz.com/edit/demo-dgdc87-dialog)
 
   Import the DialogService in your component and use one of the two functions.
 
-  ```
+  ```typescript
   import { DialogService } from '@dgdc87/dialog';
   ....
 
