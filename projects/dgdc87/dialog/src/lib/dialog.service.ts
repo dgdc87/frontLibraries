@@ -9,6 +9,17 @@ export class DialogService {
 
   constructor(private dialog: MatDialog) { }
 
+  public openNoButtonDialog(width: string, messages: string[], timeout ? : number): void{
+    this.dialog.open(DialogComponent, {
+      width: width,
+      data: {
+        message: messages,
+        type: 'noButtons',
+        timeout: timeout
+      }
+    });
+  }
+
   public openSimpleDialog(width: string, messages: string[]): void {
     this.dialog.open(DialogComponent, {
       width: width,
